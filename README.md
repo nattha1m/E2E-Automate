@@ -10,7 +10,7 @@ How to run test
 
 1.Clone project automate-assignment > Github git@github.com:nattha1m/E2E-Automate.git
 
-2.npm install
+2.ติดตั้ง package ที่โปรเจกต์ใช้ โดยคำสั่ง npm install หาก Playwright ต้อง install browser เพิ่ม จะต้องใช้คำสั่ง npx playwright install
 
 3.Run test file E2E-BuyProducts.spec > npx playwright test E2E-BuyProducts.spec --debug
 (ในกรณี tests อยู่ใน Folder Test Automate ต้องทำการ cd เพื่อเข้าสู่ tests ก่อน เช่น cd tests)

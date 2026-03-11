@@ -21,7 +21,6 @@ exports.LoginPage = class LoginPage {
     }
   }
 
-  
   async inputUserAndPassword(username, password) {
     await expect(this.fieldUsername).toBeVisible();
     await this.fieldUsername.fill(username);

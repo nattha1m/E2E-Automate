@@ -1,7 +1,6 @@
 const { expect } = require("@playwright/test");
 const { fs } = require("fs");
 const { chromium } = require("@playwright/test");
-
 exports.CompletePage = class CompletePage {
   constructor(page) {
     this.page = page;

@@ -71,20 +71,17 @@ exports.CommonTool = class CommonTool {
                 const p = await video.path().catch(() => null)
                 if (p) console.log('[VIDEO] saved to:', p)
             }
-
             if (browser) await browser.close().catch(() => {})
             console.log('[CLOSE] Browser, context, page closed successfully.')
         } catch (err) {
             console.error('[CLOSE] Error while closing browser:', err)
         }
     }
-
     async saveAndAttach(name, content, contentType) {
         const out = test.info().outputPath(name)
         await fsp.writeFile(out, content)
         await test.info().attach(name, { path: out, contentType })
     }
-
     async createPageWithFakeVideo(pathToVideo, flow) {
         // optionally allow callers to specify a flow name inline (useful for
         // tests that want to override the default flow set earlier).

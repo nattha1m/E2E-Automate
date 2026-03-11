@@ -29,7 +29,6 @@ const logAndTimeStamp = message => {
     console.log(message, bangkokTime)
 }
 
-
 test.use({
     video: 'on',
     viewport: null
